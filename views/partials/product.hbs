@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>All Products</title>
+</head>
+<body>
+    <h1>All Products</h1>
+    {{#each products}}
+    <div>
+        <h2>{{this.title}}</h2>
+        <p>Price: ${{this.price}}</p>
+    </div>
+    {{/each}}
+    <hr>
+    <h2>Add New Product</h2>
+    <form action="/api/products" method="post">
+        <label>Title: <input type="text" name="title"></label><br>
+        <label>Price: <input type="text" name="price"></label><br>
+        <button type="submit">Add Product</button>
+    </form>
+</body>
+</html>
+
+{{!-- <h2>All Products Data</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Title</th>
+            <th>Stars</th>
+            <th>Category Name</th>
+            <th>Price</th>
+            <th>Reviews</th>
+            <th>BestSeller</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each id}}
+        <tr>
+            <td>{{asin}}</td>
+            <td>{{title}}</td>
+            <td>{{stars}}</td>
+            <td>{{categoryName}}</td>
+            <td>{{price}}</td>
+            <td>{{formatReviews reviews}}</td>
+            <td>{{isBestSeller}}</td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table> --}}
+
+
+{{!-- /******************************************************************************
+*	ITE5315 – Assignment 2
+*	I declare that this assignment is my own work in accordance with Humber Academic Policy.
+*	No part of this assignment has been copied manually or electronically from any other source
+*	(including web sites) or distributed to other students.
+*	
+*	Name: Akshat Gandhi	Student ID: n01579366	Date: 06-03-2024
+*	
+*	
+******************************************************************************/ --}}
+
+      
